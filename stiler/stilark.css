@@ -1,0 +1,68 @@
+/* *** FELLES FOR ALLE SIDENE *** */ 
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  overflow: scroll;   
+  font-family: arial;
+} 
+
+ 
+#master-grid { 
+  width: 100%; 
+  max-width: 1400px; 
+  height: 800px;
+  margin: 0 auto; 
+  background-color: black; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 50px auto 50px; 
+  grid-template-areas:  "header header" 
+                        "main main" 
+                        "footer footer"; 
+} 
+ 
+/*Header*/ 
+header { 
+  grid-area: header; 
+  position: sticky;
+  background: white; 
+  opacity: 0.3; 
+  padding: 10px; 
+} 
+
+/*Main*/ 
+main { 
+  grid-area: main; 
+  margin: 20px;
+  background: white; 
+  opacity: 0.8; 
+  padding: 5px; 
+  text-align: center; 
+} 
+
+/*Footer*/ 
+footer { 
+  grid-area: footer; 
+  background: white; 
+  opacity: 0.3; 
+  padding: 10px; 
+} 
+
+
+
+/*Stilsatte a-tagger*/
+a:link { 
+  color: blue; 
+  text-decoration: underline;   
+} 
+a:visited { 
+  color: purple; 
+  text-decoration: underline; 
+} 
+ 
+a:hover { 
+  text-decoration: underline; 
+}   
